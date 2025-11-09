@@ -1,0 +1,116 @@
+/* عام */
+body {
+  font-family: "Tajawal", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #e4ebf5);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  color: #2a4d69;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  font-family: "Tajawal", sans-serif;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #2a4d69;
+  outline: none;
+  box-shadow: 0 0 5px rgba(42,77,105,0.2);
+}
+
+button {
+  background-color: #2a4d69;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #1e3a52;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table th, .table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #dce6f1;
+  color: #2a4d69;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* زر WhatsApp */
+.whatsapp-btn {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2a4d69;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #777;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+  .table th, .table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

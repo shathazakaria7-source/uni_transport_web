@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الطالبة</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>📋 تسجيل الطالبة</h2>
+    <form id="studentForm">
+      <label for="name">الاسم الكامل</label>
+      <input type="text" id="name" placeholder="أدخلي اسمك الكامل" required />
+
+      <label for="phone">رقم الهاتف</label>
+      <input type="tel" id="phone" placeholder="07XXXXXXXX" pattern="07[0-9]{8}" required />
+
+      <label for="area">المنطقة / الحي / الإسكان</label>
+      <select id="area" required>
+        <option value="">اختاري منطقتك</option>
+        <option value="عين الباشا">عين الباشا</option>
+        <option value="موبص - الحنو - دوار المغفر">موبص - الحنو - دوار المغفر</option>
+        <option value="باب عمان - شويح الغربي - مسجد البيطار">باب عمان - شويح الغربي - مسجد البيطار</option>
+        <option value="صافوط">صافوط</option>
+        <option value="التطوير">التطوير</option>
+        <option value="الفروسية">الفروسية</option>
+      </select>
+
+      <label for="departureTime">وقت الذهاب</label>
+      <input type="time" id="departureTime" required />
+
+      <label for="returnTime">وقت العودة</label>
+      <input type="time" id="returnTime" required />
+
+      <button type="submit">تسجيل</button>
+      <p id="msg" class="note"></p>
+    </form>
+  </div>
+
+  <script type="module" src="../scripts/student.js"></script>
+</body>
+</html>

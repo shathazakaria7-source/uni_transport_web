@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة المدير</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>لوحة التحكم</h1>
+
+    <!-- إضافة سائق -->
+    <form id="addDriverForm">
+      <h3>إضافة سائق جديد</h3>
+      <input type="text" id="driverName" placeholder="اسم السائق" required>
+      <select id="driverArea" required>
+        <option value="">اختر المنطقة</option>
+        <option>عين الباشا</option>
+        <option>موبص - الحنو - دوار المغفر</option>
+        <option>باب عمان - شويح الغربي - مسجد البيطار</option>
+        <option>صافوط</option>
+        <option>التطوير</option>
+      </select>
+      <button type="submit">إضافة</button>
+    </form>
+
+    <!-- جدول السائقين -->
+    <h3>جدول السائقين</h3>
+    <table class="table" id="driversTable">
+      <thead>
+        <tr>
+          <th>الاسم</th>
+          <th>المنطقة</th>
+          <th>ID</th>
+          <th>حذف</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- إضافة طالبة -->
+    <form id="addStudentForm">
+      <h3>إضافة طالبة جديدة</h3>
+      <input type="text" id="studentName" placeholder="اسم الطالبة" required>
+      <input type="text" id="studentPhone" placeholder="رقم الهاتف" required>
+      <select id="studentArea" required>
+        <option value="">اختر الحي / الاسكان</option>
+        <option>عين الباشا</option>
+        <option>موبص - الحنو - دوار المغفر</option>
+        <option>باب عمان - شويح الغربي - مسجد البيطار</option>
+        <option>صافوط</option>
+        <option>التطوير</option>
+      </select>
+      <input type="time" id="departureTime" required>
+      <input type="time" id="returnTime">
+      <button type="submit">إضافة</button>
+    </form>
+
+    <!-- زر مسح المواعيد اليومية -->
+    <button id="clearTimesBtn" style="margin:15px 0;padding:10px;cursor:pointer;">🗑️ مسح المواعيد اليومية</button>
+
+    <!-- جدول الطالبات -->
+    <h3>جدول الطالبات</h3>
+    <table class="table" id="studentsTable">
+      <thead>
+        <tr>
+          <th>الاسم</th>
+          <th>الهاتف</th>
+          <th>الحي / الاسكان</th>
+          <th>وقت الذهاب</th>
+          <th>وقت العودة</th>
+          <th>السائق</th>
+          <th>حذف</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+  </div>
+
+  <script src="../scripts/admin-full.js"></script>
+</body>
+</html>

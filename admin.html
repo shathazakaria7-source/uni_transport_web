@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>لوحة المدير</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>لوحة التحكم - المدير</h1>
+
+    <!-- إضافة سائق جديد -->
+    <form id="addDriverForm">
+      <h3>إضافة سائق جديد</h3>
+      <input type="text" id="driverName" placeholder="اسم السائق" required>
+      <select id="driverArea" required>
+        <option value="">اختر المنطقة</option>
+        <option>عين الباشا</option>
+        <option>موبص - الحنو - دوار المغفر</option>
+        <option>باب عمان - شويح الغربي - مسجد البيطار</option>
+        <option>صافوط</option>
+        <option>التطوير</option>
+        <option>الفروسية</option>
+      </select>
+      <button type="submit">إضافة السائق</button>
+    </form>
+
+    <table class="table" id="driversTable">
+      <thead>
+        <tr>
+          <th>الاسم</th>
+          <th>المنطقة</th>
+          <th>ID</th>
+          <th>حذف</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- إضافة طالبة جديدة -->
+    <form id="addStudentForm">
+      <h3>إضافة طالبة جديدة</h3>
+      <input type="text" id="studentName" placeholder="الاسم الكامل" required>
+      <input type="text" id="studentPhone" placeholder="رقم الهاتف" required>
+      <select id="studentArea" required>
+        <option value="">اختر المنطقة</option>
+        <option>عين الباشا</option>
+        <option>موبص - الحنو - دوار المغفر</option>
+        <option>باب عمان - شويح الغربي - مسجد البيطار</option>
+        <option>صافوط</option>
+        <option>التطوير</option>
+        <option>الفروسية</option>
+      </select>
+      <input type="time" id="studentGoTime" required>
+      <input type="time" id="studentReturnTime">
+      <button type="submit">إضافة الطالبة</button>
+    </form>
+
+    <table class="table" id="studentsTable">
+      <thead>
+        <tr>
+          <th>الاسم</th>
+          <th>الهاتف</th>
+          <th>المنطقة</th>
+          <th>وقت الذهاب</th>
+          <th>وقت العودة</th>
+          <th>حذف</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <!-- زر حذف المواعيد اليومية -->
+    <button id="clearDailySchedules">حذف المواعيد اليومية</button>
+  </div>
+
+  <script src="../scripts/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل الطالبة</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>تسجيل الطالبة</h1>
+    <form id="studentForm">
+      <input type="text" id="studentName" placeholder="الاسم الكامل" required>
+      <input type="text" id="studentPhone" placeholder="رقم الهاتف" required>
+      <select id="studentArea" required>
+        <option value="">اختر الحي / الاسكان</option>
+        <option>عين الباشا</option>
+        <option>موبص - الحنو - دوار المغفر</option>
+        <option>باب عمان - شويح الغربي - مسجد البيطار</option>
+        <option>صافوط</option>
+        <option>التطوير</option>
+      </select>
+      <button type="submit">تسجيل</button>
+    </form>
+  </div>
+  <script src="../scripts/student-login.js"></script>
+</body>
+</html>
